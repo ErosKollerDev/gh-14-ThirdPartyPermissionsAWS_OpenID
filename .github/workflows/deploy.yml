@@ -72,7 +72,7 @@ jobs:
           aws-region: us-east-1
       - name: Deploy site
         id: deploy
-        uses: ./.github/actions/deploy-s3-javascript
+        uses: ./.github/actions/deploy-s3-docker
         with:
           bucket: gh-authentication-openid-token-static-website-eros
           dist-folder: ./dist
